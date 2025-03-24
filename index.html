@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Impression of Me?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="questionTitle">What's Your First Impression of Me?</h2>
+        <p id="questionSubtitle">Tell me what you thought when you first met me</p>
+        
+        <form id="questionnaire">
+            <div class="options">
+                <label class="option">
+                    <input type="radio" name="impression" value="Cool">
+                    <span>Cool🥶</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="impression" value="Scary">
+                    <span>Scary😨</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="impression" value="Funny">
+                    <span>Funny😂</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="impression" value="Weird">
+                    <span>Freak🤔</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="impression" value="Kind">
+                    <span>Kind😊</span>
+                </label>
+            </div>
+
+            <textarea id="reason" placeholder="Why did you choose this?"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="responseMessage"></p>
+        <p id="thankYouMessage" style="display: none; opacity: 0; font-size: 20px; font-weight: bold; text-align: center;">
+            Makasih udah mau isi😊
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

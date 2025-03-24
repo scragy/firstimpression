@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.option {
+    background: #fff5f8;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(255, 122, 122, 0.2);
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    background: #ffdde1;
+}
+
+textarea {
+    width: 90%;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff5a92;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff2e75;
+    transform: scale(1.05);
+}
+
+#responseMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#thankYouMessage {
+    transition: opacity 0.5s ease-in-out;
+}
